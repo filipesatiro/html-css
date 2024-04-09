@@ -12,9 +12,11 @@
 
         }
         table {
+            position: relative;
             width: 500px;
             border-collapse: collapse;
             text-align: center;
+            
         }
         td, th {
             border: 1px solid black;
@@ -25,6 +27,20 @@
             color: white;
             text-align: center;
             padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        thead >tr >th {
+            background-color:black;
+            position: sticky;
+            top:-1px;
             
         }
     </style>
@@ -33,6 +49,7 @@
 <body>
     <h1>Uso de Tabelas grandes</h1>
     <!--Anatomia para Tabelas Grandes
+    CAPTION
     TABLE
     THEAD
         tr , td , th
@@ -43,14 +60,13 @@
 -->
 
 <table>
+    <caption>Populações das unidades federativas</caption>
     <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col" style="width: 210px;">Estado</th>
+          <th scope="col">População</th>
         </tr>
     </thead>
-</table>
-<table>
     <tbody>
         <tr>
             <td>São Paulo</td>
@@ -161,19 +177,37 @@
             <td>636 707</td>
         </tr>
     </tbody>
-</table>
-<table>
     <tfoot>
         <tr>
-            <td>Total de habitantes</td>
+            <th scope="row">Total de habitantes</th>
             <strong>
-                <td>210.147.125</td>
+                <td class="num">210.147.125</td>
             </strong>
         </tr>
     </tfoot>
-
 </table>    
-
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sint, voluptate unde dolore consequuntur voluptatum recusandae dolorem quas! Ad, magni? Inventore mollitia, quos eaque nisi quo enim veritatis quae nostrum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto incidunt officiis velit? Odit fugit, cum enim aliquid mollitia commodi eveniet dolor accusamus tempora rem voluptate cumque culpa facere ducimus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa numquam sed laborum a aut sequi ipsa est velit tenetur, libero sit ipsam mollitia excepturi facere, doloribus, odio iure adipisci?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem nesciunt ipsa provident doloremque odio voluptas vero modi. Harum minus aperiam, placeat voluptatum commodi provident molestiae adipisci repellendus vel qui.
+</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sint, voluptate unde dolore consequuntur voluptatum recusandae dolorem quas! Ad, magni? Inventore mollitia, quos eaque nisi quo enim veritatis quae nostrum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto incidunt officiis velit? Odit fugit, cum enim aliquid mollitia commodi eveniet dolor accusamus tempora rem voluptate cumque culpa facere ducimus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa numquam sed laborum a aut sequi ipsa est velit tenetur, libero sit ipsam mollitia excepturi facere, doloribus, odio iure adipisci?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem nesciunt ipsa provident doloremque odio voluptas vero modi. Harum minus aperiam, placeat voluptatum commodi provident molestiae adipisci repellendus vel qui.
+</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sint, voluptate unde dolore consequuntur voluptatum recusandae dolorem quas! Ad, magni? Inventore mollitia, quos eaque nisi quo enim veritatis quae nostrum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto incidunt officiis velit? Odit fugit, cum enim aliquid mollitia commodi eveniet dolor accusamus tempora rem voluptate cumque culpa facere ducimus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa numquam sed laborum a aut sequi ipsa est velit tenetur, libero sit ipsam mollitia excepturi facere, doloribus, odio iure adipisci?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem nesciunt ipsa provident doloremque odio voluptas vero modi. Harum minus aperiam, placeat voluptatum commodi provident molestiae adipisci repellendus vel qui.
+</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sint, voluptate unde dolore consequuntur voluptatum recusandae dolorem quas! Ad, magni? Inventore mollitia, quos eaque nisi quo enim veritatis quae nostrum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto incidunt officiis velit? Odit fugit, cum enim aliquid mollitia commodi eveniet dolor accusamus tempora rem voluptate cumque culpa facere ducimus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa numquam sed laborum a aut sequi ipsa est velit tenetur, libero sit ipsam mollitia excepturi facere, doloribus, odio iure adipisci?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem nesciunt ipsa provident doloremque odio voluptas vero modi. Harum minus aperiam, placeat voluptatum commodi provident molestiae adipisci repellendus vel qui.
+</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sint, voluptate unde dolore consequuntur voluptatum recusandae dolorem quas! Ad, magni? Inventore mollitia, quos eaque nisi quo enim veritatis quae nostrum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto incidunt officiis velit? Odit fugit, cum enim aliquid mollitia commodi eveniet dolor accusamus tempora rem voluptate cumque culpa facere ducimus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa numquam sed laborum a aut sequi ipsa est velit tenetur, libero sit ipsam mollitia excepturi facere, doloribus, odio iure adipisci?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem nesciunt ipsa provident doloremque odio voluptas vero modi. Harum minus aperiam, placeat voluptatum commodi provident molestiae adipisci repellendus vel qui.
+</p>
 
 
 
