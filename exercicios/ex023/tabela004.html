@@ -10,6 +10,7 @@
         }
         table {
             border-collapse: collapse;
+            text-align: center;
         }
         caption {
             font-size: 1.5em;
@@ -31,12 +32,18 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>       
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>       
                 <th colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="font-weight: bold;">Total</td>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
             <tr>
                 <th rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
