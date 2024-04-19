@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        form {
+            text-align: center;
+            padding: 20px;
+            border: 1px;
+        }
+        h1 {
+            text-align: center;   
+        }
+        fieldset {
+            padding: 10px;
+        }
+    </style>
+    <title>Formulário</title>
+</head>
+<body>
+                      <h1>Exemplo de Formulário</h1>
+          <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="iesmas" value="M" checked>
+            <label for="iesmas">Masculino</label>
+
+            <input type="radio" name="sx" id="iesfem" value="F">
+            <label for="iesfem">Feminino</label>
+            </fieldset>
+        
+            <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut"> Futebol </label><br>
+
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat"> natação</label> <br>
+
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas"> basquete </label> <br>
+
+            <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol"> vôlei</label> <br>
+
+            <input type="checkbox" name="esten" id="iesten"><label for="iesvol"> Tênis </label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Voltar">
+        </p>
+    </form>
+</body>
+</html>
